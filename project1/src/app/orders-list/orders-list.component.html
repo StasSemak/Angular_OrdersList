@@ -1,0 +1,18 @@
+<div *ngIf="!orders || orders.length == 0">
+    <p class="text-center">There's no orders...</p>
+</div>
+<div *ngFor="let order of orders" class="order-block" 
+        [class.order-delivered]="order.delivered" (click)="done(order)"
+        (dblclick)="remove(order)">
+    <h3>{{order.name | uppercase}}</h3>
+    <p>{{order.date | date}}</p>
+    <div class="products-block">
+        <div *ngFor="let product of order.products">
+            <p>{{product.name}} - {{product.price | currency}} grn.</p>
+        </div>
+    </div>
+    <p>{{order.delivered ? 'Delivered' : 'Not delivered'}}</p>
+</div>
+
+
+

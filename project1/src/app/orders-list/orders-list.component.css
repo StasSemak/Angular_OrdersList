@@ -1,0 +1,30 @@
+.order-block{
+    margin: 15px 20px;
+    background-color: rgb(155 182 161);
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+.order-block:hover{
+    cursor: pointer;
+    background-color: rgb(125, 179, 136);
+}
+h3{
+    text-align: center;
+    margin: 0;
+    margin-top: 10px;
+}
+.products-block{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.products-block p{
+    margin: 0;
+}
+.order-delivered{
+    border: 3px solid rgb(19 164 77);
+}
+.text-center{
+    text-align: center;
+}
